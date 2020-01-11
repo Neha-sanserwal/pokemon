@@ -2392,16 +2392,16 @@ pokemon = [
     "evolutions": []
   }
 ]
-const showEvolution = function(evoluations){
-  if(evoluations.length === 0) return ''
-  const evoluatData = [];
-  evoluations.forEach(evoluation=>{
-    evoluatData.push(`<p> Method: ${evolution.method}</p>
+const showEvolution = function(evolutions){
+  if(evolutions.length === 0) return ''
+  const evoluteData = [];
+  evolutions.forEach(evolution=>{
+    evoluteData.push(`<p> Method: ${evolution.method}</p>
     <p> Level: ${evolution.level}</p>
-    <p> Evolves To: ${evoluation.to}</p>
+    <p> Evolves To: ${evolution.to}</p>
     \n`);
   });
-  return `<span id = 'evoluations'>Evoluations<br></br>${evoluatData.join('\n')}`;
+  return `<span id = 'evolutions'>Evolutions<br></br>${evoluteData.join('\n')}`;
 }
 
 const handleSearch = function(){

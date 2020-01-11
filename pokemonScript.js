@@ -2392,12 +2392,12 @@ pokemon = [
     "evolutions": []
   }
 ]
-const showEvoluation = function(evoluations){
+const showEvolution = function(evoluations){
   if(evoluations.length === 0) return ''
   const evoluatData = [];
   evoluations.forEach(evoluation=>{
-    evoluatData.push(`<p> Method: ${evoluation.method}</p>
-    <p> Level: ${evoluation.level}</p>
+    evoluatData.push(`<p> Method: ${evolution.method}</p>
+    <p> Level: ${evolution.level}</p>
     <p> Evolves To: ${evoluation.to}</p>
     \n`);
   });
@@ -2420,7 +2420,7 @@ const addCards = function(){
     cards.push(`<div id = ${(monster.name).toLowerCase()} class='card'>
     <div class='cardImage'>
     <div class= 'bio'>
-  ${showEvoluation(monster.evolutions)}
+  ${showEvolution(monster.evolutions)}
     <span>Power : ${monster.types.join(', ')}</span>
     </div>
     <img src= ${monster.art_url}>

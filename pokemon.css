@@ -1,3 +1,8 @@
+
+:root{
+  --themeColor : rgba(212, 212, 153,0.7);
+}
+
 html,body{
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -30,7 +35,7 @@ html,body{
   width: 100%;
   position: absolute;
   z-index: 1;
-  background: rgba(212, 212, 153,0.7);
+  background:  var(--themeColor);
 }
 .spinner {
   height: 300px;
@@ -132,7 +137,7 @@ html,body{
   z-index: 1;
   text-align: left;
   height: 300px;
-  background: rgba(212, 212, 153,0.7);
+  background: var(--themeColor);
   width: 400px;
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   font-size: 14px;
@@ -148,11 +153,11 @@ html,body{
 .bio>span {
   margin-bottom: 1%;
 }
-#evoluations {
+#evolutions {
   line-height: 5px;
   font-weight: 900;
 }
-#evoluations>p {
+#evolutions>p {
   margin-left: 0.5rem;
   line-height: 12px;
   font-weight: 100;
